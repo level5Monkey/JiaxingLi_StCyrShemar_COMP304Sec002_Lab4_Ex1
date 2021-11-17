@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1">
         <activity
+            android:name=".TestActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity

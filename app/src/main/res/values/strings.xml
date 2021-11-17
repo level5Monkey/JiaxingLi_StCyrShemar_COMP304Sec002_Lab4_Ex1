@@ -5,6 +5,13 @@
     <string name="hint_FirstName">First Name</string>
     <string name="hint_LastName">Last Name</string>
     <string name="hint_Department">Department</string>
+    <string name="hint_TestID">TestID</string>
+    <string name="hint_NurseID">NurseID</string>
+    <string name="hint_PatientID">PatientID</string>
+    <string name="hint_BPL">BPL</string>
+    <string name="hint_BPH">BPH</string>
+    <string name="hint_Temperature">Temperature</string>
+    <string name="btn_TestView">Next</string>
     <string name="btn_Login">Login</string>
     <string name="btn_Register">Register</string>
     <string name="btn_Create">Create</string>
