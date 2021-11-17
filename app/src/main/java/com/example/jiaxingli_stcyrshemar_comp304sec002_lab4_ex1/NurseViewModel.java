@@ -20,7 +20,7 @@ public class NurseViewModel extends AndroidViewModel {
         allNurses = nurseRepository.getAllNurses();
     }
 
-    public LiveData<Nurse> findByLoginID(String loginID) { return nurseRepository.findByLoginID(loginID); }
+    public LiveData<Nurse> findByNurseID(String nurseID) { return nurseRepository.findByNurseID(nurseID); }
 
     public void insert(Nurse nurse) { nurseRepository.insert(nurse); }
 

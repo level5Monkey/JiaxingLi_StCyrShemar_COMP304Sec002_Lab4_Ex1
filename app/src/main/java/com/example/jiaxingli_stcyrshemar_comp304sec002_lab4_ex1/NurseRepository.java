@@ -44,6 +44,6 @@ public class NurseRepository {
         }).start();
     }
 
-    public LiveData<Nurse> findByLoginID(String loginID) { return nurseDao.getByLoginID(loginID); }
-    public LiveData<Integer> verifyUser(String loginID, String password) { return nurseDao.verifyUser(loginID, password); }
+    public LiveData<Nurse> findByNurseID(String nurseID) { return nurseDao.getByNurseID(nurseID); }
+    public LiveData<Integer> verifyUser(String nurseID, String password) { return nurseDao.verifyUser(nurseID, password); }
 }

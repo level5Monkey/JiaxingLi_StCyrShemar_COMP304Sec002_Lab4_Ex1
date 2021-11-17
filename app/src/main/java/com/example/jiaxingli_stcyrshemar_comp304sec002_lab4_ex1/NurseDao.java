@@ -24,11 +24,11 @@ public interface NurseDao {
     @Query("DELETE FROM nurse_table")
     void deleteAll();
 
-    @Query("Select count(*) FROM nurse_table where loginID = :loginID and password = :password")
-    LiveData<Integer> verifyUser(String loginID, String password);
+    @Query("Select count(*) FROM nurse_table where nurseID = :nurseID and password = :password")
+    LiveData<Integer> verifyUser(String nurseID, String password);
 
-    @Query("Select * FROM nurse_table where loginID = :loginID")
-    LiveData<Nurse> getByLoginID(String loginID);
+    @Query("Select * FROM nurse_table where nurseID = :nurseID")
+    LiveData<Nurse> getByNurseID(String nurseID);
 
     @Query("Select * FROM nurse_table")
     LiveData<List<Nurse>> getAllNurses();

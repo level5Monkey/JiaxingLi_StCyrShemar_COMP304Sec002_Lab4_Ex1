@@ -7,12 +7,12 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/editTextUserID"
+        android:id="@+id/editTextNurseID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:ems="10"
-        android:hint="@string/hint_LoginID"
+        android:hint="@string/hint_NurseID"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUserID" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNurseID" />
 
     <Button
         android:id="@+id/btnLogin"
