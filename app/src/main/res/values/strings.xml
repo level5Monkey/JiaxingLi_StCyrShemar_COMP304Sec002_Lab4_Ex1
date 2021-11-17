@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1</string>
+    <string name="hint_LoginID">LoginID</string>
+    <string name="hint_LoginPassword">Password</string>
+    <string name="hint_FirstName">First Name</string>
+    <string name="hint_LastName">Last Name</string>
+    <string name="hint_Department">Department</string>
+    <string name="btn_Login">Login</string>
+    <string name="btn_Register">Register</string>
+    <string name="btn_Create">Create</string>
+    <string name="btn_Patient">Patient</string>
+    <string name="btn_Test">Test</string>
+</resources>
