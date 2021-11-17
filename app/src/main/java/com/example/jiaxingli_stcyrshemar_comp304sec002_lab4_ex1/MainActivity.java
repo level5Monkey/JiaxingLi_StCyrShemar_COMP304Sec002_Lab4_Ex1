@@ -14,9 +14,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intentPatientInfo = new Intent(this, PatientInfoActivity.class);
+        Button btnViewPatient = (Button) findViewById(R.id.btnViewPatient);
+        btnViewPatient.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(intentPatientInfo);
+            }
+        });
+
         Intent intentPatient = new Intent(this, PatientActivity.class);
-        Button btnPatient = (Button) findViewById(R.id.btnPatient);
-        btnPatient.setOnClickListener(new View.OnClickListener() {
+        Button btnAddPatient = (Button) findViewById(R.id.btnAddPatient);
+        btnAddPatient.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(intentPatient);
             }

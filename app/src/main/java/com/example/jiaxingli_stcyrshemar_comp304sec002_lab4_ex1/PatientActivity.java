@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -21,10 +22,17 @@ public class PatientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient);
 
-        //patientViewModel = new ViewModelProvider(this).get(PatientViewModel.class);
+        patientViewModel = new ViewModelProvider(this).get(PatientViewModel.class);
+
+        Button btnCreatePatient = (Button) findViewById(R.id.btnCreatePatient);
+        btnCreatePatient.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                createPatientButton(v);
+            }
+        });
     }
 
-    /*public void createPatientButton(View view) {
+    public void createPatientButton(View view) {
         firstName = (TextInputEditText)findViewById(R.id.TextInputFirstName);
         lastName = (TextInputEditText)findViewById(R.id.TextInputLastName);
         department = (TextInputEditText)findViewById(R.id.TextInputDepartment);
@@ -41,10 +49,11 @@ public class PatientActivity extends AppCompatActivity {
             String roomValue = room.getText().toString();
 
             patientViewModel.insert(new Patient(firstNameValue, lastNameValue, departmentValue, nurseIDValue, roomValue));
+            Toast.makeText(PatientActivity.this, "Patient created", Toast.LENGTH_SHORT).show();
             finish();
         }
         else {
             Toast.makeText(PatientActivity.this, "Please ensure there are no null values", Toast.LENGTH_SHORT).show();
         }
-    }*/
+    }
 }

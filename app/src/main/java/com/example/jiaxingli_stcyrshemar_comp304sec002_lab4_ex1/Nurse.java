@@ -7,11 +7,9 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "nurse_table")
 public class Nurse {
 
-    @PrimaryKey(autoGenerate = true)
-    private int nurseID;
-
+    @PrimaryKey(autoGenerate = false)
     @NonNull
-    private String loginID;
+    private String nurseID;
 
     @NonNull
     private String firstName;
@@ -27,17 +25,15 @@ public class Nurse {
 
     public Nurse() {}
 
-    public Nurse(@NonNull String loginID, @NonNull String firstName, @NonNull String lastName, @NonNull String department, @NonNull String password) {
-        this.loginID = loginID;
+    public Nurse(@NonNull String nurseID, @NonNull String firstName, @NonNull String lastName, @NonNull String department, @NonNull String password) {
+        this.nurseID = nurseID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
         this.password = password;
     }
 
-    public void setNurseID(int nurseID) {this.nurseID = nurseID;}
-
-    public void setLoginID(String loginID) {this.loginID = loginID;}
+    public void setNurseID(String nurseID) {this.nurseID = nurseID;}
 
     public void setFirstName(String firstName) {this.firstName = firstName;}
 
@@ -47,12 +43,8 @@ public class Nurse {
 
     public void setPassword(String password) {this.password = password;}
 
-    public int getNurseID() {
+    public String getNurseID() {
         return nurseID;
-    }
-
-    public String getLoginID() {
-        return loginID;
     }
 
     @NonNull
