@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1</string>
     <string name="hint_NurseID">NurseID</string>
     <string name="hint_LoginPassword">Password</string>
@@ -6,6 +7,12 @@
     <string name="hint_LastName">Last Name</string>
     <string name="hint_Department">Department</string>
     <string name="hint_Room">Room</string>
+    <string name="hint_TestID">TestID</string>
+    <string name="hint_PatientID">Patient</string>
+    <string name="hint_BPL">BPL</string>
+    <string name="hint_BPH">BPH</string>
+    <string name="btn_TestView">Next</string>
+    <string name="hint_Temp">Temperature</string>
     <string name="hint_ViewPatientInfo">View Patient Info</string>
     <string name="hint_ViewTestInfo">View Test Info</string>
     <string name="btn_Login">Login</string>
