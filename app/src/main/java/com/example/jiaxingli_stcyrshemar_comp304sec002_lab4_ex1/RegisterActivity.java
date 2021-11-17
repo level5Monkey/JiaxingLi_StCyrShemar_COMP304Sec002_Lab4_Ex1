@@ -16,7 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     private Nurse nurse;
     private NurseViewModel nurseViewModel;
-    private EditText editTextLoginID;
+    private EditText editTextCreateNurseID;
     private EditText editTextFirstName;
     private EditText editTextLastName;
     private EditText editTextPassword;
@@ -46,8 +46,8 @@ public class RegisterActivity extends AppCompatActivity {
         Button btnCreate = (Button) findViewById(R.id.btnCreate);
         btnCreate.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                editTextLoginID = findViewById(R.id.editTextLoginID);
-                String LoginID = editTextLoginID.getText().toString();
+                editTextCreateNurseID = findViewById(R.id.editTextCreateNurseID);
+                String LoginID = editTextCreateNurseID.getText().toString();
 
                 editTextFirstName = findViewById(R.id.editTextFirstName);
                 String FirstName = editTextFirstName.getText().toString();

@@ -1,8 +1,6 @@
 package com.example.jiaxingli_stcyrshemar_comp304sec002_lab4_ex1;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -14,11 +12,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText editTextUserID;
+    private EditText editTextNurseID;
     private EditText editTextPassword;
     private Nurse nurse;
     private NurseViewModel nurseViewModel;
-    private String userID;
+    private String nurseID;
     private String userPassword;
 
     @Override
@@ -31,13 +29,13 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                editTextUserID = findViewById(R.id.editTextUserID);
-                userID = editTextUserID.getText().toString();
+                editTextNurseID = findViewById(R.id.editTextNurseID);
+                nurseID = editTextNurseID.getText().toString();
                 editTextPassword = findViewById(R.id.editTextPassword);
                 userPassword = editTextPassword.getText().toString();
 
-                if (!userID.isEmpty() && !userPassword.isEmpty()) {
-                    nurseViewModel.getVerifyResult(userID, userPassword).observe(LoginActivity.this, result -> {
+                if (!nurseID.isEmpty() && !userPassword.isEmpty()) {
+                    nurseViewModel.getVerifyResult(nurseID, userPassword).observe(LoginActivity.this, result -> {
                         if (result == 1) {
                             Intent intentMain = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intentMain);

@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1">
         <activity
+            android:name=".PatientInfoActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PatientActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
