@@ -8,7 +8,7 @@
     <string name="hint_Department">Department</string>
     <string name="hint_Room">Room</string>
     <string name="hint_TestID">TestID</string>
-    <string name="hint_PatientID">Patient</string>
+    <string name="hint_PatientID">PatientID</string>
     <string name="hint_BPL">BPL</string>
     <string name="hint_BPH">BPH</string>
     <string name="btn_TestView">Next</string>
