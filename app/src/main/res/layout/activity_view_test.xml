@@ -7,86 +7,28 @@
     tools:context=".ViewTestActivity">
 
     <TextView
-        android:id="@+id/textViewTestID"
+        android:id="@+id/textViewTestInfo"
         android:layout_width="143dp"
         android:layout_height="31dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
-
-    <TextView
-        android:id="@+id/textViewNurseID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPatientID" />
-
-    <TextView
-        android:id="@+id/textViewBPL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNurseID" />
-
-    <TextView
-        android:id="@+id/textViewTemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBPH"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewPatientID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
-
-    <TextView
-        android:id="@+id/textViewBPH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBPL" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <Button
         android:id="@+id/buttonMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
-        android:text="Button"
+        android:text="ADD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTestID"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestInfo"
         app:layout_constraintVertical_bias="0.965" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
