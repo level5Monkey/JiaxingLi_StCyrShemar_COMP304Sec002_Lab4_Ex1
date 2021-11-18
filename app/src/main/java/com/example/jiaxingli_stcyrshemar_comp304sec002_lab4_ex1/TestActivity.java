@@ -3,6 +3,7 @@ package com.example.jiaxingli_stcyrshemar_comp304sec002_lab4_ex1;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -49,6 +50,7 @@ public class TestActivity extends AppCompatActivity {
                     double tempvalue = Double.parseDouble(Temp.getText().toString());
                     testmodel.insert(new Test(patientidvalue, nurseidvalue, BPLvalue, BPHvalue, tempvalue));
                     Toast.makeText(TestActivity.this, "Test Created", Toast.LENGTH_SHORT).show();
+
                 }
                 else {
                     Toast.makeText(TestActivity.this,"Please ensure there are no null values",Toast.LENGTH_SHORT).show();
@@ -58,5 +60,10 @@ public class TestActivity extends AppCompatActivity {
         });
 
 
+    }
+    public void StartTestV()
+    {
+        Intent intent = new Intent(TestActivity.this,ViewTestActivity.class);
+        startActivity(intent);
     }
 }

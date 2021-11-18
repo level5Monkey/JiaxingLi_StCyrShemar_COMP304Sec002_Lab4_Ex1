@@ -29,12 +29,12 @@ public class ViewTestActivity extends AppCompatActivity {
         BPH = (TextView) findViewById(R.id.textViewBPH);
         TEMP = (TextView) findViewById(R.id.textViewTemp);
 
-        testid.setText("TestID: "+test.getTestID());
-        patientid.setText("PatientID: "+test.getPatientID());
-        nurseid.setText("NurseID: "+test.getNurseID());
-        BPL.setText("BPL: "+test.getBPL());
-        BPH.setText("BPH: "+test.getBPH());
-        TEMP.setText("Temperature: "+test.getTemperature());
+       // testid.setText("TestID: "+test.getTestID());
+       //patientid.setText("PatientID: "+test.getPatientID());
+       //nurseid.setText("NurseID: "+test.getNurseID());
+        //BPL.setText("BPL: "+test.getBPL());
+        //BPH.setText("BPH: "+test.getBPH());
+        //TEMP.setText("Temperature: "+test.getTemperature());
 
 
 
