@@ -75,7 +75,7 @@ public class TestActivity extends AppCompatActivity {
     }
     public void StartTestV()
     {
-        Intent intent = new Intent(TestActivity.this,ViewTestActivity.class);
+        Intent intent = new Intent(TestActivity.this,MainActivity.class);
         startActivity(intent);
     }
 }
