@@ -62,7 +62,7 @@ public class UpdateActivity extends AppCompatActivity {
                     String BPLvalue = BPL.getText().toString();
                     String BPHvalue = BPH.getText().toString();
                     double tempvalue = Double.parseDouble(TEMP.getText().toString());
-                    testmodel.insert(new Test(patientidvalue, nurseidvalue, BPLvalue, BPHvalue, tempvalue));
+                    testmodel.update(new Test(patientidvalue, nurseidvalue, BPLvalue, BPHvalue, tempvalue));
                     Toast.makeText(UpdateActivity.this, "Test Created", Toast.LENGTH_SHORT).show();
 
                 }

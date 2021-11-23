@@ -21,9 +21,23 @@ public class TestRepository {
     public LiveData<List<Test>> getAllTests() {return allTests; }
 
     public void insert(Test test) {
-        PatientDatabase.databaseWriteExecutor.execute(() -> {
+        TestDatabase.databaseWriteExecutor.execute(() -> {
             testDao.insert(test);
         });
+    }
+    public void delete(Test test)
+    {
+        TestDatabase.databaseWriteExecutor.execute(()->{
+            testDao.delete(test);
+                }
+                );
+    }
+    public void update(Test test)
+    {
+        TestDatabase.databaseWriteExecutor.execute(()->{
+                    testDao.update(test);
+                }
+        );
     }
 
     public LiveData<Test> findbyTestID(int testID) {return testDao.getByTestID(testID); }

@@ -21,6 +21,9 @@ public class TestViewModel extends AndroidViewModel {
 
     public void insert(Test test) { testRepository.insert(test); }
 
+    public void update(Test test) { testRepository.update(test); }
+
+
     public LiveData<List<Test>> getAllTests() { return allTests; }
 }
 
