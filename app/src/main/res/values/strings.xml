@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1</string>
-    <string name="hint_NurseID">NurseID</string>
+    <string name="hint_NurseID">Nurse ID</string>
     <string name="hint_LoginPassword">Password</string>
     <string name="hint_FirstName">First Name</string>
     <string name="hint_LastName">Last Name</string>
@@ -31,4 +31,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="departments_array">
+        <item>Emergency</item>
+        <item>Cardiology</item>
+        <item>Nursing</item>
+    </string-array>
 </resources>

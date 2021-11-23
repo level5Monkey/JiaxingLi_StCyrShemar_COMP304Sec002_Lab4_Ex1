@@ -9,11 +9,13 @@
         android:id="@+id/btnCreatePatient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/btn_Create"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerDepartment"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/TextInputNurseID"
@@ -21,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:layout_weight="1"
-        android:editable="false"
         android:hint="@string/hint_NurseID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -54,7 +55,7 @@
         android:id="@+id/TextInputFirstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:hint="@string/hint_FirstName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -62,10 +63,11 @@
         app:layout_constraintTop_toBottomOf="@+id/TextInputNurseID" />
 
     <Spinner
-        android:id="@+id/spinnerDepart"
+        android:id="@+id/SpinnerDepartment"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="32dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextInputRoom" />
