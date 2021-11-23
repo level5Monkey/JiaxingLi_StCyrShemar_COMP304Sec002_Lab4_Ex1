@@ -15,6 +15,7 @@ public class PatientInfoActivity extends AppCompatActivity {
 
     private PatientViewModel patientViewModel;
     private TextView textViewPatientInfo;
+    private TextView patientID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class PatientInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_patient_info);
 
         textViewPatientInfo = findViewById(R.id.textViewPatientInfo);
+        patientID = findViewById(R.id.textViewPatientID);
 
         patientViewModel = new ViewModelProvider(this).get(PatientViewModel.class);
 

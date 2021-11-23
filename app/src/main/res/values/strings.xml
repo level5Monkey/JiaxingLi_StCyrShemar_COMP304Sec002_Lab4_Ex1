@@ -20,6 +20,7 @@
     <string name="btn_Create">Create</string>
     <string name="btn_Patient">Patient</string>
     <string name="btn_Test">Test</string>
+    <string name="hint_btnUpdate">Update</string>
     <string name="title_activity_main2">MainActivity2</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
