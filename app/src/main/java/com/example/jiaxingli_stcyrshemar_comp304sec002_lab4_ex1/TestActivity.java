@@ -1,14 +1,20 @@
 package com.example.jiaxingli_stcyrshemar_comp304sec002_lab4_ex1;
 
+import static com.example.jiaxingli_stcyrshemar_comp304sec002_lab4_ex1.LoginActivity.MY_PREFS_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 public class TestActivity extends AppCompatActivity {
    // private EditText testid;
@@ -26,6 +32,12 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test);
 
         testmodel = new ViewModelProvider(this).get(TestViewModel.class);
+
+        SharedPreferences sharedPref = TestActivity.this.getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
+        String nurseIDValue = sharedPref.getString("nurseID", "Nurse ID");
+
+        EditText nurseID= (EditText) findViewById(R.id.editNurseID);
+        nurseID.setText(nurseIDValue);
 
         //testid = (EditText) findViewById(R.id.editTestID);
         nurseid = (EditText) findViewById(R.id.editNurseID);
