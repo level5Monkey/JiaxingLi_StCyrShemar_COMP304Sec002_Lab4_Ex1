@@ -11,7 +11,7 @@
     <string name="hint_PatientID">PatientID</string>
     <string name="hint_BPL">BPL</string>
     <string name="hint_BPH">BPH</string>
-    <string name="btn_TestView">Next</string>
+    <string name="btn_TestView">Save</string>
     <string name="hint_Temp">Temperature</string>
     <string name="hint_ViewPatientInfo">View Patient Info</string>
     <string name="hint_ViewTestInfo">View Test Info</string>

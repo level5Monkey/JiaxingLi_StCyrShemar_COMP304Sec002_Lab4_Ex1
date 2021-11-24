@@ -22,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText editTextPassword;
     private EditText editTextDepartment;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
