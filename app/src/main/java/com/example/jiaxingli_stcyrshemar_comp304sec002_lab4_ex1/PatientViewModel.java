@@ -21,6 +21,9 @@ public class PatientViewModel extends AndroidViewModel {
 
     public void insert(Patient patient) { patientRepository.insert(patient); }
 
+    public void update(int patientID, String fisrtName, String lastName, String Department, String Room) { patientRepository.update(patientID, fisrtName, lastName, Department, Room); }
+
+
     public LiveData<List<Patient>> getAllPatients() { return allPatients; }
 }
 

@@ -2,6 +2,7 @@ package com.example.jiaxingli_stcyrshemar_comp304sec002_lab4_ex1;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "nurse_table")
@@ -23,6 +24,7 @@ public class Nurse {
     @NonNull
     private String password;
 
+    @Ignore
     public Nurse() {}
 
     public Nurse(@NonNull String nurseID, @NonNull String firstName, @NonNull String lastName, @NonNull String department, @NonNull String password) {

@@ -62,4 +62,9 @@ public class Patient {
     public String getRoom() {
         return room;
     }
+
+    @NonNull
+    public String getInfo() {
+        return "First Name:" + firstName + ", Last Name:" + lastName + ", Department:" + department + ", Nurse ID:" + nurseID + ", Room:" + room;
+    }
 }
