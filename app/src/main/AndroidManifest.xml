@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JiaxingLi_StCyrShemar_COMP304Sec002_Lab4_Ex1">
         <activity
-            android:name=".UpdateActivity"
-            android:exported="true" />
-        <activity
             android:name=".ViewTestActivity"
             android:exported="true" />
         <activity
